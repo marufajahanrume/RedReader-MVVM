@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer phone body -->
+    <path
+        android:fillColor="#673AB7"
+        android:pathData="M7,2h10c1.1,0 2,0.9 2,2v16c0,1.1 -0.9,2 -2,2H7c-1.1,0 -2,-0.9 -2,-2V4c0,-1.1 0.9,-2 2,-2z"/>
+
+    <!-- Screen rectangle -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M8,5h8v12h-8z"/>
+
+    <!-- Bottom home button -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M11,19h2v1h-2z"/>
+
+    <!-- Info circle (for 'About') -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,10a2,2 0 1,0 0,-4a2,2 0 0,0 0,4z"/>
+
+    <!-- Info bar -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M11,11h2v5h-2z"/>
+</vector>

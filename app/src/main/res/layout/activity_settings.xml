@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:tint="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_settings"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/im"
+>
+
+        <!-- 1. Account -->
+        <LinearLayout
+            android:id="@+id/layoutAccount"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_account" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Account"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 2. Appearance -->
+        <LinearLayout
+            android:id="@+id/layoutAppearance"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_appearance" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Appearance"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 3. Notifications -->
+        <LinearLayout
+            android:id="@+id/layoutNotifications"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_notifications" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Notifications"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 4. Privacy -->
+        <LinearLayout
+            android:id="@+id/layoutPrivacy"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_privacy" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Privacy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 5. Data Usage -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutDataUsage"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_data" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Data Usage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 6. App Preferences -->
+        <LinearLayout
+            android:id="@+id/layoutAppPreferences"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_preferences" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="App Preferences"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 7. Clear Cache -->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layoutClearCache"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_clear" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="Clear Cache"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 8. Help -->
+        <LinearLayout
+            android:id="@+id/layoutHelp"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_help" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="@string/help_support"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 9. Terms -->
+        <LinearLayout
+            android:id="@+id/layoutTerms"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_terms" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="@string/terms_policies"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- 10. About -->
+        <LinearLayout
+            android:id="@+id/layoutAbout"
+            style="@style/SettingsRowStyle">
+            <ImageView
+                style="@style/SettingsIconStyle"
+                android:src="@drawable/ic_about" />
+
+            <TextView
+                style="@style/SettingsTextStyle"
+                android:text="About App"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

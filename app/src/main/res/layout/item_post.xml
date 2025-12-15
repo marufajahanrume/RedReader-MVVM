@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- Hidden image (kept for code) -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:scaleType="centerCrop" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/post_title"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Subreddit -->
+    <TextView
+        android:id="@+id/post_subreddit"
+        android:textColor="#666"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Author -->
+    <TextView
+        android:id="@+id/post_author"
+        android:textColor="#666"
+        android:textSize="13sp"
+        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Optional publish date -->
+    <TextView
+        android:id="@+id/post_date"
+        android:text="Published: Oct 2025"
+        android:textColor="#888"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Upvotes -->
+    <TextView
+        android:id="@+id/post_upvotes"
+        android:textColor="#444"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+</LinearLayout>
+
+

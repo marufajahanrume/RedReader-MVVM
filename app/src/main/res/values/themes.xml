@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- This is your main app theme (LIGHT version) -->
+    <style name="Theme.RedReaderNew" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Light background -->
+        <item name="android:windowBackground">#FFFFFF</item>
+
+        <!-- Light status bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+    </style>
+
+</resources>

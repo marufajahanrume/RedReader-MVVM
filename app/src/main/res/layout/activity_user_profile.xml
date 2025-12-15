@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@id/profile_page_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"/>
+
+    <!-- Profile Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/card_bg"
+        app:layout_constraintTop_toBottomOf="@+id/profile_page_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp">
+
+            <!-- Avatar -->
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_person"
+                app:tint="@color/teal_700"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="u/TechExplorer99"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@id/ivAvatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivAvatar"
+                android:layout_marginStart="12dp" />
+
+            <!-- Bio -->
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Software developer. Coffee lover. Android UI enthusiast."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tvUsername"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvUsername"
+                android:layout_marginTop="4dp" />
+
+            <!-- Divider -->
+            <View
+                android:visibility="gone"
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@id/ivAvatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- Profile fields -->
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: Male"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: 27"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tvGender"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: US"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tvAge"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvHobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobbies: Music, Gaming, Hiking"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tvLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occupation: Student"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tvHobbies"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/tvLanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Languages: English"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tvOccupation"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="2dp" />
+
+            <!-- Karma badges -->
+            <TextView
+                android:id="@+id/tvPostKarma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Karma: 5423"
+                android:textSize="12sp"
+                android:background="@drawable/karma_badge"
+                android:padding="6dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toTopOf="@id/tvGender"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCommentKarma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment Karma: 2891"
+                android:textSize="12sp"
+                android:background="@drawable/karma_badge"
+                android:padding="6dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/tvPostKarma"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Posts Header -->
+    <TextView
+        android:id="@+id/tvPostsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Posts (6)"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUserPosts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPostsHeader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
